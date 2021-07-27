@@ -17,7 +17,7 @@ public class DataMapper extends Mapper<LongWritable, Text, Text, DataBean> {
 	@Override
 	protected void setup(Mapper<LongWritable, Text, Text, DataBean>.Context context) throws IOException, InterruptedException {
 		FileSplit fs = (FileSplit) context.getInputSplit();
-		// 获取文件名
+		// 获取文件名，每个文件各执行一次
 		fileName = fs.getPath().getName();
 	}
 

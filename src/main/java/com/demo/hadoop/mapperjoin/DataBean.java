@@ -11,8 +11,9 @@ import lombok.Data;
 @Data
 public class DataBean implements Writable {
 
-	private String orderId; // 订单主键
 	private String productId; // 产品主键
+	
+	private String orderId; // 订单主键
 	private int amount; // 数量
 	private String productName; // 产品名称
 	private String tableFlag; // 表名标记

@@ -20,7 +20,7 @@ public class DataMapper extends Mapper<LongWritable, Text, Text, NullWritable> {
 
 	Text k = new Text();
 
-	private HashMap<String, String> pdMap = new HashMap<String, String>();;
+	private HashMap<String, String> pdMap = new HashMap<String, String>();
 	
 	@Override
 	protected void setup(Mapper<LongWritable, Text, Text, NullWritable>.Context context) throws IOException, InterruptedException {
